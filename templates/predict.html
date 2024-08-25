@@ -1,0 +1,358 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="{{ url_for('predict') }}" method="post">
+    {{ form.hidden_tag() }}
+
+    <div>
+        {{ form.Age.label }}
+        {{ form.Age }}
+        {% if form.Age.errors %}
+            {% for error in form.Age.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.BusinessTravel.label }}
+        {{ form.BusinessTravel }}
+        {% if form.BusinessTravel.errors %}
+            {% for error in form.BusinessTravel.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.DailyRate.label }}
+        {{ form.DailyRate }}
+        {% if form.DailyRate.errors %}
+            {% for error in form.DailyRate.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.Department.label }}
+        {{ form.Department }}
+        {% if form.Department.errors %}
+            {% for error in form.Department.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.DistanceFromHome.label }}
+        {{ form.DistanceFromHome }}
+        {% if form.DistanceFromHome.errors %}
+            {% for error in form.DistanceFromHome.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.Education.label }}
+        {{ form.Education }}
+        {% if form.Education.errors %}
+            {% for error in form.Education.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.EducationField.label }}
+        {{ form.EducationField }}
+        {% if form.EducationField.errors %}
+            {% for error in form.EducationField.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.EmployeeCount.label }}
+        {{ form.EmployeeCount }}
+        {% if form.EmployeeCount.errors %}
+            {% for error in form.EmployeeCount.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.EmployeeNumber.label }}
+        {{ form.EmployeeNumber }}
+        {% if form.EmployeeNumber.errors %}
+            {% for error in form.EmployeeNumber.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.EnvironmentSatisfaction.label }}
+        {{ form.EnvironmentSatisfaction }}
+        {% if form.EnvironmentSatisfaction.errors %}
+            {% for error in form.EnvironmentSatisfaction.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.Gender.label }}
+        {{ form.Gender }}
+        {% if form.Gender.errors %}
+            {% for error in form.Gender.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.HourlyRate.label }}
+        {{ form.HourlyRate }}
+        {% if form.HourlyRate.errors %}
+            {% for error in form.HourlyRate.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.JobInvolvement.label }}
+        {{ form.JobInvolvement }}
+        {% if form.JobInvolvement.errors %}
+            {% for error in form.JobInvolvement.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.JobLevel.label }}
+        {{ form.JobLevel }}
+        {% if form.JobLevel.errors %}
+            {% for error in form.JobLevel.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.JobRole.label }}
+        {{ form.JobRole }}
+        {% if form.JobRole.errors %}
+            {% for error in form.JobRole.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.JobSatisfaction.label }}
+        {{ form.JobSatisfaction }}
+        {% if form.JobSatisfaction.errors %}
+            {% for error in form.JobSatisfaction.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.MaritalStatus.label }}
+        {{ form.MaritalStatus }}
+        {% if form.MaritalStatus.errors %}
+            {% for error in form.MaritalStatus.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.MonthlyIncome.label }}
+        {{ form.MonthlyIncome }}
+        {% if form.MonthlyIncome.errors %}
+            {% for error in form.MonthlyIncome.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.MonthlyRate.label }}
+        {{ form.MonthlyRate }}
+        {% if form.MonthlyRate.errors %}
+            {% for error in form.MonthlyRate.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.NumCompaniesWorked.label }}
+        {{ form.NumCompaniesWorked }}
+        {% if form.NumCompaniesWorked.errors %}
+            {% for error in form.NumCompaniesWorked.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.Over18.label }}
+        {{ form.Over18 }}
+        {% if form.Over18.errors %}
+            {% for error in form.Over18.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.OverTime.label }}
+        {{ form.OverTime }}
+        {% if form.OverTime.errors %}
+            {% for error in form.OverTime.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.PercentSalaryHike.label }}
+        {{ form.PercentSalaryHike }}
+        {% if form.PercentSalaryHike.errors %}
+            {% for error in form.PercentSalaryHike.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.PerformanceRating.label }}
+        {{ form.PerformanceRating }}
+        {% if form.PerformanceRating.errors %}
+            {% for error in form.PerformanceRating.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.RelationshipSatisfaction.label }}
+        {{ form.RelationshipSatisfaction }}
+        {% if form.RelationshipSatisfaction.errors %}
+            {% for error in form.RelationshipSatisfaction.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.StandardHours.label }}
+        {{ form.StandardHours }}
+        {% if form.StandardHours.errors %}
+            {% for error in form.StandardHours.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.StockOptionLevel.label }}
+        {{ form.StockOptionLevel }}
+        {% if form.StockOptionLevel.errors %}
+            {% for error in form.StockOptionLevel.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.TotalWorkingYears.label }}
+        {{ form.TotalWorkingYears }}
+        {% if form.TotalWorkingYears.errors %}
+            {% for error in form.TotalWorkingYears.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.TrainingTimesLastYear.label }}
+        {{ form.TrainingTimesLastYear }}
+        {% if form.TrainingTimesLastYear.errors %}
+            {% for error in form.TrainingTimesLastYear.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.WorkLifeBalance.label }}
+        {{ form.WorkLifeBalance }}
+        {% if form.WorkLifeBalance.errors %}
+            {% for error in form.WorkLifeBalance.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.YearsAtCompany.label }}
+        {{ form.YearsAtCompany }}
+        {% if form.YearsAtCompany.errors %}
+            {% for error in form.YearsAtCompany.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.YearsInCurrentRole.label }}
+        {{ form.YearsInCurrentRole }}
+        {% if form.YearsInCurrentRole.errors %}
+            {% for error in form.YearsInCurrentRole.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.YearsSinceLastPromotion.label }}
+        {{ form.YearsSinceLastPromotion }}
+        {% if form.YearsSinceLastPromotion.errors %}
+            {% for error in form.YearsSinceLastPromotion.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.YearsWithCurrManager.label }}
+        {{ form.YearsWithCurrManager }}
+        {% if form.YearsWithCurrManager.errors %}
+            {% for error in form.YearsWithCurrManager.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>{{ form.submit() }}</div>
+    <br>
+    <div>
+        {{ output }}
+    </div>
+    <br>
+    <div>
+        <p>Redirect to Homepage? <a href="{{ url_for('home') }}">Home</a></p>
+    </div>
+</form>
+{% endblock content %}
+
