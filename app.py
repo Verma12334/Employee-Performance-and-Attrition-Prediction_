@@ -97,5 +97,6 @@ def predict():
     return render_template("predict.html", title="Predict", form=form, output=message)
 
 
+
 if __name__ == "__main__":
     app.run(debug=True)
