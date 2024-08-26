@@ -81,10 +81,19 @@ def predict():
                 j += 1
             input_arr.append(i)
 
-        prediction = model.predict(np.array([input_arr]))
-        message = f"The predicted Attrition is {prediction[0]} "
+        input_array = np.array([input_arr])
+
+        prediction = model.predict(input_array)
+
+        if prediction[0] == 1:
+            message = "Employee will not leave the job !"
+        else:
+            message = "Employee will leave the job !"
+
+       # message = f"The predicted Attrition is {prediction[0]} "
     else:
         message = "Please provide valid input details!"
+
     return render_template("predict.html", title="Predict", form=form, output=message)
 
 

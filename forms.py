@@ -34,7 +34,7 @@ class InputForm(FlaskForm):
     MonthlyIncome = IntegerField("Monthly Income", validators=[DataRequired()])
     MonthlyRate = IntegerField("Monthly Rate", validators=[DataRequired()])
     NumCompaniesWorked = IntegerField("Num Companies Worked", validators=[DataRequired()])
-    Over18 = StringField("Over 18", validators=[DataRequired()])
+    Over18 = SelectField("Over 18", choices=[('Yes'), ('No')], validators=[DataRequired()])
     OverTime = SelectField("Over Time", choices=[('Yes', 'Yes'), ('No', 'No')], validators=[DataRequired()])
     PercentSalaryHike = IntegerField("Percent Salary Hike", validators=[DataRequired()])
     PerformanceRating = IntegerField("Performance Rating", validators=[DataRequired()])
