@@ -7,6 +7,7 @@ https://employee-performance-and-attrition.onrender.com
 # About the Project
 
 
+
 This project aims to predict employee attrition using data from an IBM HR dataset. By analyzing various factors such as employee demographics, job role, and work environment, the project utilizes both traditional machine learning models like Random Forest, Logistic Regression, Stochastic Gradient Descent, Support Vector Classfier, K-Nearest Neighbor, Decision Trees and deep learning techniques like Artificial Neural Networks (ANN) to improve prediction accuracy. The insights gained from this analysis can help organizations understand the reasons behind employee turnover and implement strategies to enhance employee retention.
 
 # Project Overview
