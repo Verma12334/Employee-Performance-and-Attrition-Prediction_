@@ -49,3 +49,4 @@ class InputForm(FlaskForm):
     YearsSinceLastPromotion = IntegerField("Years Since Last Promotion", validators=[DataRequired()])
     YearsWithCurrManager = IntegerField("Years With Current Manager", validators=[DataRequired()])
     submit = SubmitField("Submit")
+    
