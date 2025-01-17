@@ -4,19 +4,9 @@
 
 https://employee-performance-and-attrition.onrender.com
 
-# About the Project
-
-
-
-This project aims to predict employee attrition using data from an IBM HR dataset. By analyzing various factors such as employee demographics, job role, and work environment, the project utilizes both traditional machine learning models like Random Forest, Logistic Regression, Stochastic Gradient Descent, Support Vector Classfier, K-Nearest Neighbor, Decision Trees and deep learning techniques like Artificial Neural Networks (ANN) to improve prediction accuracy. The insights gained from this analysis can help organizations understand the reasons behind employee turnover and implement strategies to enhance employee retention.
-
-# Project Overview
-
-This project predicts employee attrition using IBM HR data by leveraging traditional machine learning models and deep learning techniques. The goal is to identify key factors influencing employee turnover and improve prediction accuracy to aid in retention strategies.
-
 ## Introduction
 
-Employees are the foundation of any organization. Committed workers who are driven and effective in achieving the company's aims and objectives are essential to a firm's success.
+Employees are the backbone of any organization. The success of an organization is heavily dependent on committed employees who are motivated and productive to carry out a company's goals and objectives.
 
 Thus, employee attrition, the rate at which employees leave their job, hurts the growth and performance of an organization in terms of financial profit, productivity, and time. However, attrition is an inevitable part of any business. There will come a time when an employees wants to leave a company, which can happen for many reasons. For instance, employees might be seeking for better opportunities, mentally illed, working excessive hours, working in a toxic atmosphere or under bad management, etc. But when attrition reaches a particular threshold, it becomes a concern to be addressed as it may be reflecting a deep problem with the company culture. Attrition is particularly concerning when the attrition rate is high, indicating that employees are turning over pretty quickly, or when early attrition rate is high, indicating new joiners leave the company within the first few years of employment. Therefore, it is important to ask questions, find out why people are leaving, and understand what is influencing attrition rate within an organization.
 
@@ -37,52 +27,22 @@ Data Cleaning: NumPy, Pandas
 
 Visualization: Matplotlib, Seaborn
 
-# Machine Learning Models:
-
- Random Forest, Logistic Regression, Stochastic Gradient Descent, Support Vector Classfier, K-Nearest Neighbor, Decision Trees
-
-
-# Deep Learning Models:
-
- Artificial Neural Networks (ANN)
+Machine Learning Models: Random Forest, Logistic Regression, Stochastic Gradient Descent, Support Vector Classfier, K-Nearest Neighbor, Decision Trees
 
 ## Contributions
 Contributions to this project are welcome! If you have any suggestions, improvements, or new features to add, please open an issue or submit a pull request.
 
-
+## Acknowledgements
 This project makes use of the following open-source libraries and frameworks:
-
-# Machine Learning Libraries:
-
 
 Pandas: https://pandas.pydata.org/
 
-
 NumPy: https://numpy.org/
-
 
 Matplotlib: https://matplotlib.org/
 
-
 Seaborn: https://seaborn.pydata.org/
-
-
 
 Scikit-learn: https://scikit-learn.org/
 
-
-# Deep Learning Libraries:
-
-
-TensorFlow: https://www.tensorflow.org/
-
-
-Keras: https://keras.io/
-
-## Acknowledgements
-
-The project utilises several open-source libraries and frameworks, including Data Cleaning: NumPy, Pandas,Visualization: Matplotlib, Seaborn,TensorFlow,Keras. We extend our heartfelt thanks to the developers of these tools for their invaluable contributions to the open-source community.
-
-We want to thank the creators of these tools for their priceless contributions to the open-source world.
-
-## ThankYou ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+We would like to express our gratitude to the developers of these tools for their invaluable contributions to the open-source community.
